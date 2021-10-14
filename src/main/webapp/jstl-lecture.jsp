@@ -35,11 +35,12 @@
 </head>
 <body>
 
+    <h1>My name is: <%= request.getAttribute("myName")%></h1>
 
 <%-- ============================= EL (Expression Language) --%>
 
-<h1>My name is: ${myName}</h1>
-<h1>My name from the query string is: ${param.name}</h1>
+<%--<h1>My name is: ${myName}</h1>--%>
+<%--<h1>My name from the query string is: ${param.name}</h1>--%>
 
 
 

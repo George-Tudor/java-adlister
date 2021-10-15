@@ -39,34 +39,9 @@ new Person(3, "Peggy", "Carter", 30)
             <td>${person.age}</td>
         </tr>
     </c:forEach>
-
-<%--    <tr>--%>
-<%--        <td></td>    --%>
-<%--        <td></td>    --%>
-<%--        <td></td>    --%>
-<%--        <td></td>    --%>
-<%--    </tr>--%>
-<%--    <tr>--%>
-<%--        <td></td>--%>
-<%--        <td></td>--%>
-<%--        <td></td>--%>
-<%--        <td></td>--%>
-<%--    </tr>--%>
-<%--    <tr>--%>
-<%--        <td></td>--%>
-<%--        <td></td>--%>
-<%--        <td></td>--%>
-<%--        <td></td>--%>
-<%--    </tr>--%>
-
-
-<%--        <c:forEach var="person" items="${people}">--%>
-<%--            <tr>--%>
-<%--                <td>${person.id}</td>${person.firstName}<td>${person.lastName}</td><td>${person.age}</td>--%>
-<%--            </tr>--%>
-<%--        </c:forEach>--%>
-
 </table>
+
+<%@ include file="partials/display-extra-person.jsp"%>
 
 </body>
 </html>

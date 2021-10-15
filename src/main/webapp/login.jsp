@@ -11,6 +11,8 @@
     }
 %>
 <html>
+
+
 <%@ include file="partials/head.jsp"%>
 <body>
 <%@ include file="partials/navbar.jsp"%>

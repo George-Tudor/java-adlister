@@ -16,7 +16,7 @@
 <%@ include file="partials/navbar.jsp"%>
 
 <h1>Login Form</h1>
-<form action="" method="POST">
+<form method="POST">
     <label for="username">Username</label>
     <br>
     <input id="username" type="text" placeholder="Enter username" name="username">
@@ -24,7 +24,7 @@
     <br>
     <label for="password">Password</label>
     <br>
-    <input name="password" id="password" placeholder="Enter password" cols="30" rows="10">
+    <input type="password" name="password" id="password" placeholder="Enter password" cols="30" rows="10">
     <br>
     <br>
     <button>Submit</button>

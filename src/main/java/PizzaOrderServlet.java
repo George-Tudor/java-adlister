@@ -18,8 +18,13 @@ public class PizzaOrderServlet extends HttpServlet {
             String name = "Pizza Order";
 
 
-            Order order = new Order("size", "crust", "sauce", "toppings", "address");
-            request.setAttribute("order", order);
+            Order order = new Order();
+            request.setAttribute("size", order.getSize());
+            request.setAttribute("crust", order.getCrust());
+            request.setAttribute("sauce", order.getSauce());
+            request.setAttribute("toppings", order.getToppings());
+            request.setAttribute("address", order.getAddress());
+
 
             request.getRequestDispatcher("pizza-order.jsp").forward(request, response);
             System.out.println(order);

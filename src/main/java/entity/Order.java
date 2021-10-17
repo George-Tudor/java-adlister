@@ -1,15 +1,16 @@
 package entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
     private String size;
     private String crust;
     private String sauce;
-    private String toppings;
+    private ArrayList<String> toppings;
     private String address;
 
-    public Order(String size, String crust, String sauce, String toppings, String address) {
+    public Order(String size, String crust, String sauce, ArrayList<String> toppings, String address) {
         this.size = size;
         this.crust = crust;
         this.sauce = sauce;
@@ -17,6 +18,9 @@ public class Order {
         this.address = address;
     }
 
+    public Order() {
+
+    }
 
     public String getSize() {
         return size;
@@ -42,11 +46,11 @@ public class Order {
         this.sauce = sauce;
     }
 
-    public String[] getToppings() {
+    public ArrayList<String> getToppings() {
         return toppings;
     }
 
-    public void setToppings(String[] toppings) {
+    public void setToppings(ArrayList<String> toppings) {
         this.toppings = toppings;
     }
 

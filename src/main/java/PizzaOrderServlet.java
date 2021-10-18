@@ -17,10 +17,17 @@ public class PizzaOrderServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println(request.getParameter("size"));
+        String size = request.getParameter("size");
+        String crust = request.getParameter("crust");
+        String sauce = request.getParameter("sauce");
+        String[] toppings = request.getParameterValues("toppings");
+        String address = request.getParameter("address");
 
-
-
+        System.out.println(size);
+        System.out.println(crust);
+        System.out.println(sauce);
+        System.out.println(toppings);
+        System.out.println(address);
     }
 }
 

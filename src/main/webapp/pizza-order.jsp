@@ -3,17 +3,17 @@
 <html>
 <head>
 
-    <jsp:include page="partials/head.jsp">
-        <jsp:param name="title" value="Pizza Order"/>
-    </jsp:include>
+<%--    <jsp:include page="partials/head.jsp">--%>
+<%--        <jsp:param name="title" value="Pizza Order"/>--%>
+<%--    </jsp:include>--%>
 
-    <%
-        System.out.println(request.getParameter("size"));
-        System.out.println(request.getParameter("crust"));
-        System.out.println(request.getParameter("sauce"));
-        System.out.println(request.getParameter("toppings"));
-        System.out.println(request.getParameter("address"));
-    %>
+<%--    <%--%>
+<%--        System.out.println(request.getParameter("size"));--%>
+<%--        System.out.println(request.getParameter("crust"));--%>
+<%--        System.out.println(request.getParameter("sauce"));--%>
+<%--        System.out.println(request.getParameter("toppings"));--%>
+<%--        System.out.println(request.getParameter("address"));--%>
+<%--    %>--%>
 
 
 </head>

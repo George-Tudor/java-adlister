@@ -12,20 +12,15 @@ import java.io.IOException;
 public class PizzaOrderServlet extends HttpServlet {
         @Override
         protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-            String name = "Pizza Order";
-
-
-            Order order = new Order();
-            request.setAttribute("size", order.getSize());
-            request.setAttribute("crust", order.getCrust());
-            request.setAttribute("sauce", order.getSauce());
-            request.setAttribute("toppings", order.getToppings());
-            request.setAttribute("address", order.getAddress());
-
-
             request.getRequestDispatcher("pizza-order.jsp").forward(request, response);
-            System.out.println(order);
         }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println(request.getParameter("size"));
+
+
+
     }
+}
 

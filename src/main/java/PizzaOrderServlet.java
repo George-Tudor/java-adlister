@@ -1,4 +1,3 @@
-import entity.Order;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -6,14 +5,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 
 @WebServlet("/pizza-order")
 public class PizzaOrderServlet extends HttpServlet {
-        @Override
-        protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-            request.getRequestDispatcher("pizza-order.jsp").forward(request, response);
-        }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -26,8 +23,14 @@ public class PizzaOrderServlet extends HttpServlet {
         System.out.println(size);
         System.out.println(crust);
         System.out.println(sauce);
-        System.out.println(toppings);
+        System.out.println(Arrays.toString(toppings));
         System.out.println(address);
     }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("pizza-order.jsp").forward(request, response);
+    }
+
 }
 

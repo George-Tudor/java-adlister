@@ -18,7 +18,7 @@
 
 </head>
 <body>
-<form action="/pizza-order.jsp" method="POST">
+<form method="POST">
     <div>
         <label for="size">Select Pizza Size</label>
         <select id="size" name="size">
@@ -44,25 +44,35 @@
             <option>BBQ Sauce</option>
         </select>
     </div>
+
     <div>
         <h4>Select Toppings</h4>
         <label for="pepperoni">Pepperoni</label>
-        <input type="checkbox" id="pepperoni" name="toppings">
+        <input type="checkbox" id="pepperoni" value="pepperoni" name="toppings">
+
         <label for="Ham">Ham</label>
-        <input type="checkbox" id="Ham" name="toppings">
+        <input type="checkbox" id="Ham" value="ham"  name="toppings">
+
         <label for="sausage">Sausage</label>
-        <input type="checkbox" id="sausage" name="toppings">
+        <input type="checkbox" id="sausage" value="sausage"  name="toppings">
+
         <label for="mushrooms">Mushrooms</label>
-        <input type="checkbox" id="mushrooms" name="toppings">
+        <input type="checkbox" id="mushrooms" value="mushrooms"  name="toppings">
+
         <label for="green-peppers">Green peppers</label>
-        <input type="checkbox" id="green-peppers" name="toppings">
+        <input type="checkbox" id="green-peppers" value="green peppers"  name="toppings">
+
         <label for="onions">Onions</label>
-        <input type="checkbox" id="onions" name="toppings">
+        <input type="checkbox" id="onions" value="onions"  name="toppings">
+
         <label for="olives">Olives</label>
-        <input type="checkbox" id="olives" name="toppings">
+        <input type="checkbox" id="olives" value="olives"  name="toppings">
+
         <label for="pineapple">Pineapple</label>
-        <input type="checkbox" id="pineapple" name="toppings">
+        <input type="checkbox" id="pineapple" value="pineapple"  name="toppings">
+
     </div>
+
     <div>
         <label for="address">Delivery Address</label><br>
         <textarea id="address" name="address" rows="5"></textarea>

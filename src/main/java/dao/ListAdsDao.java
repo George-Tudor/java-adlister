@@ -1,5 +1,9 @@
+package dao;
+
 import java.util.ArrayList;
 import java.util.List;
+import model.Ads;
+import model.Ad;
 
 public class ListAdsDao implements Ads {
     private List<Ad> ads;

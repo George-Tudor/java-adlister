@@ -14,12 +14,11 @@
 
 <h1>Items for Sale</h1>
 
-<c:forEach var="ads" items="${ads}">
+<c:forEach var="ad" items="${ads}">
     <div>
-        <p>Seller Id: ${ads.id}</p>
-        <p>Seller: ${ads.userId}</p>
-        <p>Title: ${ads.title}</p>
-        <p>Description: ${ads.description}</p>
+
+        <h3>Title: ${ad.title}</h3>
+        <p>Description: ${ad.description}</p>
     </div>
 </c:forEach>
 
